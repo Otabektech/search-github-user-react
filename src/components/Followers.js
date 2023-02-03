@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Followers = () => {
   const { followers } = React.useContext(GithubContext);
+
   return (
     <Wrapper>
       <div className="followers">
@@ -30,7 +31,6 @@ const Wrapper = styled.article`
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   position: relative;
-
   &::before {
     content: " followers";
     position: absolute;
